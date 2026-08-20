@@ -6,3 +6,30 @@ una persona:
 	Altura en metros: dato de tipo real.
 	
 Tras leer los datos, el programa debe mostrarlos en la salida estándar.*/
+
+#include<iostream>
+
+using namespace std;
+
+int main(){
+
+	int edad;
+	string sexo;
+	float altura;
+
+	cout<<"Ingrese la edad:";
+	cin>>edad;
+
+	cout<<"Ingrese su genero:";
+	cin>>sexo;
+
+	cout<<"Ingrese su altura:";
+	cin>>altura;
+
+	cout<<"-------- Datos personales --------"<<endl;
+	cout<<"Edad:   " << edad << endl;
+	cout<<"Genero: " << sexo << endl;
+	cout<<"Altura: " << altura << endl;
+
+	return 0;
+}
