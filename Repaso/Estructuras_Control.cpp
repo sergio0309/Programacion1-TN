@@ -32,7 +32,7 @@ int main(){
     cout<<"\n\nDo While\n";
     string user = "admin", usuario;
     int password = 12345, password1, intentos = 3;
-    bool estado=false;
+    bool estado=true;
     do
     {
         cout<<"Ingrese el usuario: ";
@@ -40,13 +40,13 @@ int main(){
         cout<<"Ingrese contrasenia: ";
         cin>>password1;
         if( usuario == user && password1 == password){
-            estado = true;
+            estado = false;
         }
         else {
             cout<<"Intentos: "<<intentos<<"\n";
             intentos--;    
         }
-    } while (estado == false && intentos > 0);
+    } while (estado == true && intentos > 0);
 
     if(estado ==  true) {
         cout<<"Usuario Bloqueado";
